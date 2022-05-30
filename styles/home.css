@@ -1,0 +1,170 @@
+/*Decoraciones del fondo*/
+#bkg_braces {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 90vh;
+    width: 20vw;
+    min-width: 70px;
+} #bkg_hashtag {
+    position: absolute;
+    z-index: -1;
+    left: -4vw;
+    top: -5vh;
+    width: 30vw;
+    min-width: 90px;
+} #bkg_lightbulb {
+    position: absolute;
+    z-index: -1;
+    right: -2vw;
+    bottom: 2vh;
+    width: 25vw;
+    min-width: 70px;
+}
+
+/*Welcoming*/
+main > section:not(:first-of-type) {
+    border-top: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 50px;
+} main > section:first-of-type{
+    height: 60vh;
+    width:100%;
+} main > section:first-of-type > article:last-of-type {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: var(--blanco);
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+} main > section:first-of-type > article:last-of-type p {
+    font-size: 2rem;
+} main > section:first-of-type > article:last-of-type p:first-of-type {
+    color: var(--primary-color);
+} main > section:first-of-type > article:last-of-type a{
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 1rem 3rem;
+    text-align: center;
+    color: var(--primary-color);
+} 
+#ctn_language {
+    display: none;
+}
+
+
+/*Sobre mí*/
+#ctn_sobreMi {
+    padding-top: 50px;
+} #ctn_sobreMi, #ctn_expLaboral {
+    color: var(--blanco);
+}
+/*Habilidades*/
+#hability_habilities {
+    color: var(--blanco);
+    text-align: left;
+    width: 80%;
+    max-width: 600px;
+} .hability_course {
+    margin: 0px 0px 10px 10px;
+} .hability_course > p:not(:first-of-type) {
+    padding-left: 10px;
+} .hability_subtitle {
+    font-weight: 600;
+    margin-bottom: 20px;
+} #hability_english, #hability_design {
+    display: none;
+} .hability_btn_div {
+    background-color: var(--primary-color-halfOpacity);
+} .hability_btn_div.active {
+    background-color: var(--primary-color);
+} .hability_btn_btn {
+    height: 40px;
+    color: var(--blanco);
+    background-color: transparent;      
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+} .hability_btn_btn:hover{
+    color: var(--primary-color);
+    background-color: var(--primary-color-halfOpacity);
+    
+    animation-direction:alternate;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+} .hability_btn_btn.active {
+    color: var(--fondo);
+    background-color: var(--primary-color-halfOpacity);
+}
+
+@media screen and (max-width: 580px) {
+    nav > div > ul > li:first-of-type a{
+        text-decoration: underline var(--accent-color);
+        color: var(--accent-color);
+    } 
+    .hability_btn_div{
+        height: 5px;
+    } .hability_btn_btn{
+        text-align: center;
+        padding-left: 2.5px;
+        border-radius: 0px  0px 2.5px 2.5px;
+    } .hability_btn {
+        width: 30%; 
+        display: inline-flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    } #ctn_habilities {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+} @media screen and (min-width: 581px) {
+    nav > div > ul > li:first-of-type a{
+        text-decoration: underline var(--accent-color);
+        text-decoration-thickness: 2px;
+    }
+    .hability_btn {
+        display: flex;
+        flex-direction: row;
+    } #hability_habilities {
+        margin-left: 20px;
+    } .hability_btn_div{
+        width: 5px;
+    } .hability_btn_btn{
+        text-align: left;
+        width: 150px; 
+        padding-left: 10px;
+        border-radius: 0px 2.5px 2.5px 0px;
+    } #ctn_habilities {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }#ctn_sobreMi {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: center;
+    } #ctn_sobreMi > img {
+        width: 40%;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    main > section:not(:first-of-type) {
+        padding: 20px;
+    }
+} @media screen and (min-width: 821px) {
+    main > section:not(:first-of-type) {
+        width: 90%;
+        max-width: 900px;
+        padding: 40px;
+    }
+}
