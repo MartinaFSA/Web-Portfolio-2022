@@ -1,0 +1,383 @@
+/*GENERALES*/
+:root {
+    --blanco: #fafafa;
+    --negro: #222222;
+    --beige: #C7BFB9;
+    --shadow: 0px 0px 4px 0px #dadadab3,
+    0px 4px 4px 0px #dadadab3;
+    --strongerShadow: 0px 0px 4px 0px #d4d4d4bb,
+    0px 4px 4px 0px #d4d4d4bb;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+body {
+    background-color: var(--blanco);
+} 
+
+li {
+    list-style: none;
+} 
+ul, button{
+    margin: 0%;
+    padding: 0%;
+} 
+a {
+    text-decoration: none;
+} 
+a:hover {
+    text-decoration: none;
+}  
+a:visited {
+    color: unset;
+    text-decoration: unset;
+}  
+
+/*ELEMENTOS REUTILIZABLES*/
+.botonRedondo, .owl-prev, .owl-next {
+    background-color: var(--blanco);
+    border-radius: 100%;
+    color: var(--negro);
+    box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    position: absolute;
+    text-align: center;
+}
+
+/*POSICIONAMIENTO*/
+.ocupaTodo {
+    height: 100%;
+    width: 100%;
+} .ocupaElWidth {
+    width: 100%;
+}
+.flex_verticalCenter {
+    display: flex;
+    align-items: center;
+} .flex_horizontalCenter {
+    display: flex;
+    justify-content: center;
+} .flex_superCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} .columnaFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} .flex_row {
+    display: flex;
+    flex-direction: row;
+} .flex_between {
+    display: flex;
+    justify-content: space-between;
+} .positionRelative {
+    position: relative;
+} .overflowHidden {
+    overflow: hidden;
+} .displayChange {
+    display: none;
+} .displayChange.active {
+    display: block;
+}
+
+/*TEXTOS*/
+.textoChico {
+    font-size: 1.1rem;
+} .textoMediano {
+    font-size: 1.2rem;
+} .textoGrande {
+    font-size: 1.5rem;
+} .iconMediano {
+    font-size: 2rem;
+} .textoBlanco {
+    color: var(--blanco);
+} .textoGris {
+    color: var(--negro);
+} .textoBeige {
+    color: var(--beige);
+}  
+/*NOTA: Ver si dejo este textoPortada o lo cambio por textoGrande*/
+.fontAca {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} .primeraLetraMayuscula {
+    text-transform: capitalize;
+} .cursivaMenosOpaco {
+    opacity: 70%;
+    font-style: italic;
+} .textoCentrado {
+    text-align: center;
+} .textoBold {
+    font-weight: bold;
+}
+/*Hamburguesa*/
+.menuHamburguesa {
+    cursor: pointer;
+    display: block;
+    float: left;
+    position: fixed;
+    z-index: 10;
+} .menuHamburguesa_linea {
+    background-color: var(--blanco);
+    width: 35px;
+    height: 5px;
+    margin: 5px 20px;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+} .menuHamburguesa_linea:first-of-type {
+    margin-top: 20px;
+}  
+
+/*Menu hamburguesa*/
+.menuHamburguesa_ul {
+    background-color: var(--blanco);
+    border-radius: 0px 0px 10px 10px;
+    padding: 60px 0% 20px;
+    margin: 0%;
+    position: fixed;
+    left: -200%;
+    transition: 0.3s;
+    z-index: 9;
+} .menuHamburguesa_ul > div {
+    width: 100%;
+    padding-left: calc(50% - (100%/2));
+    padding-top: 5px;
+    padding-bottom: 5px;
+} .menuHamburguesa_ul > div > div {
+    background-color: var(--beige);
+    width: 100%;
+    height: 1px;
+    padding: 0%;
+} .menuHamburguesa_ul li {
+    text-align: center;
+} .menuHamburguesa_ul a { 
+    margin: 15px 0%;
+    padding: 0%;
+} .menuHamburguesa_ul li:hover {
+    color: var(--blanco);
+    background-color: rgba(120, 109, 102, 0.907);
+}
+
+/*menu active*/
+.menuHamburguesa_ul.active {
+    position: fixed;
+    left: 0px;
+} .menuHamburguesa.active .menuHamburguesa_linea {
+    background-color: var(--beige);
+} .menuHamburguesa.active .menuHamburguesa_linea:nth-child(2) {
+    opacity: 0;
+} .menuHamburguesa.active .menuHamburguesa_linea:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+} .menuHamburguesa.active .menuHamburguesa_linea:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}  
+
+/*HEADER*/
+header > article {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+} #header_logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}  
+header section > div:nth-of-type(2n) {
+    margin: 20px 0px;
+}  
+header section > div:nth-of-type(3n) {
+    width: 80%;
+    text-align: center;
+} .header_linea {
+    background-color: var(--blanco);
+    width: 140%;
+    height: 2px;
+    margin-bottom: 10px;
+    margin-left: calc(50% - 140%/2);
+}  
+
+/*CARDS*/
+h3 {
+    text-align: center;
+    margin: 40px 0px;
+} .col, .row, .marginPadding0  {
+    padding: 0%;
+    margin: 0%;
+} .ctn_cardSlider {
+    height: 10rem;
+    padding: 0% 30px;
+    margin: 40px 0px;
+} .categorias_card_a {
+    margin: 6px 10px;
+} .categorias_card_a {
+    color: unset;
+    height: 10rem;
+    width: 10rem;
+    z-index: 3;
+} .categorias_card {
+    background-color: white;
+    border-radius: 2.5px;
+    box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+} .categorias_card_a:hover, .botonRedondo:hover, .owl-prev:hover, .owl-next:hover {
+    box-shadow: var(--strongerShadow);
+    -moz-box-shadow: var(--strongerShadow);
+    -webkit-box-shadow: var(--strongerShadow);
+} .owl-prev:focus, .owl-next:focus {
+    outline: none;
+}.categorias_card > i {
+    margin: 40px 0px 15px;
+} /*#slider_GoLeft, #slider_GoRight,*/ .owl-prev, .owl-next {
+    position: absolute;
+    top: calc(50% - 45px/2);
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+} /*#slider_GoLeft,*/ .owl-prev {
+    left: -2px;
+} /*#slider_GoRight,*/ .owl-next {
+    right: -2px;
+} .owl-prev span, .owl-next span {
+    font-size: 3rem;
+    position: relative;
+    top: -18px;
+}
+
+/*MENÚ CARTA*/
+#ctn_menuCartaItems {
+    padding: 0% 10%;
+} .menuCartaItem {
+    margin-bottom: 40px;
+} .menuCartaItem > div > p {
+    margin: 0%;
+    padding: 0%;
+} .menuCartaItem > div > p:first-of-type {
+    padding-left: 1rem;
+} .bulletMenuCarta {
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid var(--beige);
+    width: 0.8rem;
+    height: 0.8rem;
+} .lineaItemMenuCarta {
+    height: 1px;
+    background-color: var(--beige);
+    margin-top: 8px;
+    margin-bottom: 4px;
+    padding: 0%;
+}
+#lastSection {margin: 30px 0px;}
+/*FOOTER*/
+footer {
+    background-color: var(--beige);
+    padding: 40px 20px 0px;
+} footer section:first-of-type > p:not(:nth-of-type(4)){
+    margin: 2.5px 0px 0px;
+} footer section:nth-of-type(2n) {
+    margin: 20px 0px;
+} footer section:first-of-type > p:nth-of-type(4) {
+    margin: 30px 0px 0px;
+} #footer_logo {
+    margin: 20px 0px;
+    width: 5rem;
+} footer > div {
+    border-top: 1px solid var(--negro);
+    padding: 10px 0px;
+} footer > div > p {
+    opacity: 80%;
+    text-align: center;
+}
+      
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*MEDIA SCREENS y breakpoints*/
+
+@media screen and (max-width: 500px) {
+    .menuCartaItem > div > p:nth-of-type(2n) {
+        padding-left: 3%;
+}  
+} @media screen and (min-width: 500px) {
+    .menuCartaItem > div > p:nth-of-type(2n) {
+        position: absolute;
+        top: 0px;
+}  
+}
+@media screen and (min-width: 500px) and (max-width: 520px) {
+    .menuCartaItem > div > p:nth-of-type(2n) {
+        right: 5%;
+}  
+} @media screen and (min-width: 520px) and (max-width: 2100px) {
+    .menuCartaItem > div > p:nth-of-type(2n) {
+        right: 10%;
+}  
+} @media screen and (min-width: 2100px) {
+    .menuCartaItem > div > p:nth-of-type(2n) {
+        right: 15%;
+}  
+}
+@media screen and (max-width: 520px) {
+    .menuHamburguesa_ul {
+        width: 100%;
+}  
+} 
+
+@media screen and (max-width: 800px) {
+    :root {
+      font-size: 16px;
+} 
+    .lineaItemMenuCarta {
+        width: 100%;
+} 
+} @media screen and (min-width: 800px)  {
+    .lineaItemMenuCarta {
+        width: 80%;
+        margin-left: calc(50% - 80%/2);
+}  
+}
+@media screen and (min-width: 800px) and (max-width: 1024px) { 
+    :root {
+      font-size: 18px;
+} 
+}
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    :root {
+      font-size: 20px;
+}   
+}
+@media screen and (min-width: 1500px) and (max-width: 2100px) {
+    :root {
+      font-size: 22px;
+}   
+}
+
+@media screen and (min-width: 2100px) {
+    :root {
+      font-size: 24px;
+}   
+}
+@media screen and (min-width: 520px) and (max-width: 1300px) { 
+}
+@media screen and (min-width: 520px) and (max-width: 1500px) {
+}
+
+@media screen and (min-width: 520px) and (max-width: 900px) {
+    .menuHamburguesa_ul {
+        width: 60vw;
+}  
+}
+
+@media screen and (min-width: 900px) {
+    .menuHamburguesa_ul {
+        width: 35vw;
+}  
+}
+@media screen and (min-width: 520px) {}

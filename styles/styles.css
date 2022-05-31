@@ -120,6 +120,7 @@ nav {
 /*Contact*/
 #ctn_emailSender p {
     text-align: center;
+    margin-top: 40px;
 }#ctn_emailSender label {
     margin: 20px 0px 0px;
     color: var(--blanco);
@@ -156,7 +157,7 @@ nav {
 /*Footer*/
 footer {
     width: 100%;
-    padding: 0px 0px 40px;
+    padding: 0px 10px 40px;
     background-color: #0e0e0e;
 } 
 footer p, footer a {
@@ -215,7 +216,7 @@ footer .socialLinks > div:not(:last-of-type){
 
 @media screen and (max-width: 820px) {
     main {
-        padding: 20px 10px;
+        padding: 50px 10px;
     }
 }
 

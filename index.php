@@ -16,7 +16,7 @@
                 <article class="column_centerCenter">
                     <p>Martina Fernández Suárez</p>
                     <p>Desarrolladora Web Full-Stack</p>
-                    <a href="#ctn_sobreMi">Sobre Mí<i></i></a>
+                    <a href="#ctn_sobreMi">Sobre Mí<i class="fa-solid fa-angle-down"></i></a>
                 </article>
             </section>
 
@@ -26,7 +26,9 @@
                 <article>
                     <p class="title">Sobre mí</p>
                     <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <p>
+                            Desarolladora Full-Stack y estudiante de Diseño Gráfico. Me interesa la tecnología, el diseño y la programación.
+                        </p>
                     </div>
                 </article>
                 <img src="img/index/sittingPC.svg" alt=""> 
@@ -46,7 +48,7 @@
                             </div>
                             <div class="hability_btn">
                                 <div id="design_div" class="hability_btn_div"></div>
-                                <button id="design" class="hability_btn_btn">Desarrollo Web</button>
+                                <button id="design" class="hability_btn_btn">Diseño</button>
                             </div>
                             <div class="hability_btn">
                                 <div id="english_div" class="hability_btn_div"></div>
@@ -58,7 +60,11 @@
                                 <p class="hability_subtitle">Desarrollo Web</p>
                                 <div class="hability_course">
                                     <p>React Fullstack en Codo a Codo</p>
-                                    <p>- JS y React</p>
+                                    <p>- JS, React, FireBase</p>
+                                </div>
+                                <div class="hability_course">
+                                    <p>Argentina Programa - Primera Etapa</p>
+                                    <p>- Programación imperativa y programación con objetos</p>
                                 </div>
                                 <div class="hability_course">
                                     <p>PHP Fullstack en Codo a Codo</p>
@@ -70,33 +76,28 @@
                                 </div>
                             </div>
                             <div id="hability_design">
-                                <p class="hability_subtitle">Habilidad</p>
+                                <p class="hability_subtitle">Diseño</p>
                                 <div class="hability_course">
-                                    <p>Curso</p>
-                                    <p>Habilidades</p>
+                                    <p>UX/UI en Codo a Codo</p>
+                                    <p>- Benchmarking, MVP, arquitectura de la información, user flow, wireframing y prototipado funcional, métricas, guidelines.</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>Curso</p>
-                                    <p>Habilidades</p>
-                                </div>
-                                <div class="hability_course">
-                                    <p>Curso</p>
-                                    <p>Habilidades</p>
+                                    <p>Figma</p>
                                 </div>
                             </div>
                             <div id="hability_english">
-                                <p class="hability_subtitle">Habilidad</p>
+                                <p class="hability_subtitle">Inglés</p>
                                 <div class="hability_course">
-                                    <p>Curso</p>
-                                    <p>Habilidades</p>
+                                    <p>Certificado de aprobación de Inglés en Bachillerato Internacional</p>
+                                    <p>- Noviembre de 2020</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>Curso</p>
-                                    <p>Habilidades</p>
+                                    <p>Ciclo de Idiomas Extendido del CLE</p>
+                                    <p>- Noviembre de 2019</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>Curso</p>
-                                    <p>Habilidades</p>
+                                    <p>CECIE</p>
+                                    <p>- Enero de 2012 a Diciembre de 2018</p>
                                 </div>
                             </div>
                         </article>
@@ -111,18 +112,10 @@
                 <article class="text_center">
                     <p class="title">Experiencia laboral</p>
                     <div>
-                        <p class="hability_subtitle">Empresa</p>
+                        <p class="hability_subtitle">Accenture - Mayo de 2022</p>
                         <div class="">
-                            <p>Puesto</p>
-                            <p>Responsabilidades</p>
-                        </div>
-                        <div class="">
-                            <p>Puesto</p>
-                            <p>Responsabilidades</p>
-                        </div>
-                        <div class="">
-                            <p>Puesto</p>
-                            <p>Responsabilidades</p>
+                            <p>Desarolladora Full-Stack</p>
+                            <p>tareas</p>
                         </div>
                     </div>
                 </article>

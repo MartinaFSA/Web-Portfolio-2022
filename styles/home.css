@@ -151,6 +151,7 @@ main > section:not(:first-of-type) {
         flex-direction: row-reverse;
         width: 100%;
         justify-content: center;
+        align-items: center;
     } #ctn_sobreMi > img {
         width: 40%;
         margin-right: 20px;

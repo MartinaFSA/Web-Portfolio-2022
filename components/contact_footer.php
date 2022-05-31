@@ -50,14 +50,14 @@
     <section class="text_center">
         <p>Gracias por visitar mi página!</p>
         <article class="socialLinks">
-            <div><a href="index.php"><img src="img/social/gh.svg" alt="GitHub"></a></div>
-            <div><a href="index.php"><img src="img/social/ig.svg" alt="LinkedIn"></a></div>
-            <div><a href="index.php"><img src="img/social/in.svg" alt="Instagram"></a></div>
+            <div><a href="https://github.com/MartinaFSA"><img src="img/social/gh.svg" alt="GitHub"></a></div>
+            <div><a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"><img src="img/social/ig.svg" alt="LinkedIn"></a></div>
+            <div><a href="https://www.instagram.com/mafesa._/"><img src="img/social/in.svg" alt="Instagram"></a></div>
         </article>
         <p>Martina Fernández Suárez</p>
     </section>
     <div id="backToTop">
-        <a href="#page_top">Volver al inicio <i class="fas fa-angle-down" style=""></i> </a>
+        <a href="#page_top">Volver al inicio</a>
     </div>               
 </footer>
 <script src="scripts/scripts.js"></script>

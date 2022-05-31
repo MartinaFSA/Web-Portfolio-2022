@@ -13,4 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <link rel="icon" href="img/miLogo.ico" />
+    <link rel="icon" href="../../img/miLogo.ico" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../../styles/styles.css">
