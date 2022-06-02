@@ -22,7 +22,7 @@
                 </article>
                 <article id="index">
                     <p>Página de Inicio</p>
-                    <img src="../../img/paginas/primeraPagina__completa.png" alt="Captura completa de la página de inicio">
+                    <img src="../../img/paginas/primeraPagina__completa.PNG" alt="Captura completa de la página de inicio">
                 </article>
                 <article id="demo">
                     <p>Video de demostración</p>

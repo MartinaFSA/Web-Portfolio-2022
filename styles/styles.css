@@ -118,7 +118,7 @@ nav {
     background: linear-gradient(180deg, rgba(13, 15, 15, 0.581) 0%, rgba(13, 15, 15, 0) 100%);
 }
 /*Contact*/
-#ctn_emailSender p {
+#ctn_emailSender > div>form>p {
     text-align: center;
     margin-top: 40px;
 }#ctn_emailSender label {
@@ -147,13 +147,25 @@ nav {
     outline-offset: -2px;
     display: block;
 } #ctn_emailSender input[type=submit]:hover {
-    background-color: var(--primary-color-halfOpacity);
+    background-color: #53795930;
+    outline: 2px solid var(--accent-color); 
+    color: var(--accent-color);
 } #ctn_emailSender textarea {
     width: 100%;
     height: 200px;
     max-width: 400px; 
 }
-
+#contenedorDeModal {
+    position: fixed;
+    width: 100vw;
+    top: calc(100vh - 40px);
+    left: 0px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--fondo);
+    text-align: center;
+    padding: 10px;
+}
 /*Footer*/
 footer {
     width: 100%;
@@ -162,6 +174,16 @@ footer {
 } 
 footer p, footer a {
     color: var(--blanco);
+} footer >section:first-of-type > button {
+    border: 2px solid var(--blanco);
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin: 20px 0px;
+    text-align: center;
+} footer >section:first-of-type > button:hover {
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 } footer section:first-of-type p {
     padding: 20px 0px;
 }
@@ -184,11 +206,12 @@ footer .socialLinks > div:not(:last-of-type){
 #backToTop {
     text-align: center;
     border-top: 1px solid rgba(0, 0, 0, 0.26);
-    padding: 20px 0px; }
-#backToTop i {
-    transform: rotate(180deg);
+    padding: 20px 0px; 
 }
-
+#backToTop:hover{
+    color: var(--accent-color);
+    fill: var(--accent-color);
+} #backToTop svg{ fill: #ffff;}
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -304,7 +327,6 @@ footer .socialLinks > div:not(:last-of-type){
     } #ctn_emailSender > div:first-of-type{
         max-width: 90%;
     }
-
 } @media screen and (min-width: 581px) {
     header > section:first-of-type {
         display: none;

@@ -54,7 +54,12 @@ main > section:not(:first-of-type) {
     padding: 1rem 3rem;
     text-align: center;
     color: var(--primary-color);
-} 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}  main > section:first-of-type > article:last-of-type a:hover {
+    background-color: #53795930;
+}
 #ctn_language {
     display: none;
 }
@@ -70,8 +75,6 @@ main > section:not(:first-of-type) {
 #hability_habilities {
     color: var(--blanco);
     text-align: left;
-    width: 80%;
-    max-width: 600px;
 } .hability_course {
     margin: 0px 0px 10px 10px;
 } .hability_course > p:not(:first-of-type) {
@@ -129,8 +132,13 @@ main > section:not(:first-of-type) {
     nav > div > ul > li:first-of-type a{
         text-decoration: underline var(--accent-color);
         text-decoration-thickness: 2px;
-    }
-    .hability_btn {
+    } #habilidadesCertificaciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+    } .hability_btn {
         display: flex;
         flex-direction: row;
     } #hability_habilities {
@@ -145,7 +153,7 @@ main > section:not(:first-of-type) {
     } #ctn_habilities {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        width: 70%;
     }#ctn_sobreMi {
         display: flex;
         flex-direction: row-reverse;

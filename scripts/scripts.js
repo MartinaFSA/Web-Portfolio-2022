@@ -46,3 +46,10 @@ function reveal() {
 } 
 window.addEventListener("scroll", reveal);
 
+//footer
+let footer_arrow_up = document.getElementById('footer_arrow_up');
+let backToTop = document.getElementById('backToTop');
+function backToTop_hover() {
+    footer_arrow_up.style.fill = '#537959'
+}
+backToTop.onmouseenter(backToTop_hover);

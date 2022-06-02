@@ -16,7 +16,9 @@
                 <article class="column_centerCenter">
                     <p>Martina Fernández Suárez</p>
                     <p>Desarrolladora Web Full-Stack</p>
-                    <a href="#ctn_sobreMi">Sobre Mí<i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#ctn_sobreMi">Sobre Mí
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 24" fill="none" stroke="#8FAE94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </a>
                 </article>
             </section>
 
@@ -38,7 +40,7 @@
             <section class="fadeInBottom">
                 <!--Numeral--><img src="img/hashtag.svg" id="bkg_hashtag" alt="">
 
-                <article>
+                <article id="habilidadesCertificaciones">
                     <p class="title">Habilidades y certificaciones</p>
                     <section id="ctn_habilities">
                         <article>
