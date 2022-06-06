@@ -24,10 +24,10 @@
                     <p>Página de Inicio</p>
                     <img src="../../img/paginas/segundaPagina__completa.png" alt="Captura completa de la página de inicio">
                 </article>
-                <!--<article id="demo">
+                <article id="demo">
                     <p>Video de demostración</p>
-                    <video src="" controls></video>
-                </article> -->
+                    <video src="demoAvatar.mp4" controls></video>
+                </article>
             </section>
             
             <!--<section id="ctn_paletaDeColores">
