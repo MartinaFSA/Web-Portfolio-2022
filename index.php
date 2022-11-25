@@ -17,20 +17,18 @@
                     <p>Martina Fernández Suárez</p>
                     <p>Desarrolladora Web Full-Stack</p>
                     <a href="#ctn_sobreMi">Sobre Mí
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 24" fill="none" stroke="#8FAE94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 24" fill="none" stroke="#8FAE94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </a>
                 </article>
             </section>
 
-            <!--Braces--><img src="img/curly-braces.svg" id="bkg_braces" alt="">
+            <!--Curly bracket--><img src="img/curly-braces.svg" id="bkg_braces" alt="">
             <!--Sobre mí-->
             <section class="text_center fadeInBottom" id="ctn_sobreMi">
                 <article>
                     <p class="title">Sobre mí</p>
                     <div>
-                        <p>
-                            Desarolladora Full-Stack y estudiante de Diseño Gráfico. Me interesa la tecnología, el diseño y la programación.
-                        </p>
+                        <p>Desarrolladora web especializada en Front-End. Poseo la capacidad de aprender de forma rápida y adaptativa, la cual me permite acomplarme a distintos desafíos. Me definen el ser colaborativa, organizada, creativa y positiva. Disfruto trabajar en equipo y utilizar tecnologías modernas para realizar productos que resistan el paso del tiempo.</p>
                     </div>
                 </article>
                 <img src="img/index/sittingPC.svg" alt=""> 
@@ -54,70 +52,73 @@
                             </div>
                             <div class="hability_btn">
                                 <div id="english_div" class="hability_btn_div"></div>
-                                <button id="english" class="hability_btn_btn">Inglés</button>
+                                <button id="english" class="hability_btn_btn">Idiomas</button>
                             </div>
                         </article>
                         <article id="hability_habilities">
                             <div id="hability_webDev">
                                 <p class="hability_subtitle">Desarrollo Web</p>
                                 <div class="hability_course">
-                                    <p>React Fullstack en Codo a Codo</p>
-                                    <p>- JS, React, FireBase</p>
+                                    <p>Desarrollo Web Front-End</p>
+                                    <p>- HTML, CSS, SCSS, Bootstrap, JS, React, Vue</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>Argentina Programa - Primera Etapa</p>
-                                    <p>- Programación imperativa y programación con objetos</p>
+                                    <p>Desarrollo Web Back-End</p>
+                                    <p>- PHP, MySQL</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>PHP Fullstack en Codo a Codo</p>
-                                    <p>- HTML, CSS, JS, GIT, SQL y PHP</p>
-                                </div>
-                                <div class="hability_course">
-                                    <p>Desarrollo Web en Aprende Programando</p>
-                                    <p>- HTML, CSS y Bootstrap</p>
+                                    <p>Otros</p>
+                                    <p>- GIT, Firebase</p>
                                 </div>
                             </div>
                             <div id="hability_design">
                                 <p class="hability_subtitle">Diseño</p>
                                 <div class="hability_course">
-                                    <p>UX/UI en Codo a Codo</p>
+                                    <p>Diseño de Interfaz de Usuario y Experiencia de Usuario (UX/UI)</p>
                                     <p>- Benchmarking, MVP, arquitectura de la información, user flow, wireframing y prototipado funcional, métricas, guidelines.</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>Figma</p>
+                                    <p>Diseño Gráfico</p>
+                                    <p>- Imágenes para redes sociales y diseños para imprenta.</p>
                                 </div>
                             </div>
                             <div id="hability_english">
-                                <p class="hability_subtitle">Inglés</p>
+                                <p class="hability_subtitle">Idiomas</p>
                                 <div class="hability_course">
-                                    <p>Certificado de aprobación de Inglés en Bachillerato Internacional</p>
-                                    <p>- Noviembre de 2020</p>
+                                    <p>Inglés</p>
+                                    <p>- Competencia Profesional, nivel C1+</p>
                                 </div>
                                 <div class="hability_course">
-                                    <p>Ciclo de Idiomas Extendido del CLE</p>
-                                    <p>- Noviembre de 2019</p>
-                                </div>
-                                <div class="hability_course">
-                                    <p>CECIE</p>
-                                    <p>- Enero de 2012 a Diciembre de 2018</p>
+                                    <p>Español</p>
+                                    <p>- Nativo</p>
                                 </div>
                             </div>
                         </article>
                     </section>
                 </article>
-                <!--Estrella--><img src="img/" alt=""> 
             </section>
 
             <!--Experiencia-->
             <section class="fadeInBottom" id="ctn_expLaboral">
                 <!--Lightbulb--><img src="img/lightbulb.svg" alt="" id="bkg_lightbulb" >
-                <article class="text_center">
+                <article class="text_center horizontalCenter">
                     <p class="title">Experiencia laboral</p>
-                    <div>
-                        <p class="hability_subtitle">Accenture - Mayo de 2022</p>
-                        <div class="">
-                            <p>Desarolladora Full-Stack</p>
-                            <p>tareas</p>
+                    <div class="expLaboral">
+                        <p class="hability_subtitle">Accenture</p>
+                        <div class="workExpierence-tasks">
+                            <p>Application Development Associate</p>
+                            <p>- Análisis de problemas programáticos
+                            <br>- Desarrollo de features
+                            <br>- Solución de bugs
+                            <br>- Manejo de: Angular, Vue y JS
+                            </p>
+                        </div>
+                        <div class="workExpierence-tasks">
+                            <p>Contractor</p>
+                            <p>- Mejoras de accesibilidad web
+                            <br>- Solución de bugs
+                            <br>- Manejo de: CSS, HTML, WordPress
+                            </p>
                         </div>
                     </div>
                 </article>

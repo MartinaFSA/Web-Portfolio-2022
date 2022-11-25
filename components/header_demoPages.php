@@ -20,8 +20,8 @@
     </nav>
     <section class="navBar_social socialLinks">
         <div><a href="https://github.com/MartinaFSA"><img src="../../img/social/gh.svg" alt="GitHub"></a></div>
-        <div><a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"><img src="../../img/social/ig.svg" alt="LinkedIn"></a></div>
-        <div><a href="https://www.instagram.com/mafesa._/"><img src="../../img/social/in.svg" alt="Instagram"></a></div>
+        <div><a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"><img src="../../img/social/in.svg" alt="LinkedIn"></a></div>
+        <div><a href="https://www.instagram.com/mafesa._/"><img src="../../img/social/ig.svg" alt="Instagram"></a></div>
     </section>
     <section></section>
 </header>

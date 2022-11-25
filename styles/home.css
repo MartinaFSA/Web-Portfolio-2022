@@ -77,6 +77,9 @@ main > section:not(:first-of-type) {
     text-align: left;
 } .hability_course {
     margin: 0px 0px 10px 10px;
+} .hability_course > p:first-of-type, .workExpierence-tasks > p:first-of-type{
+    color: var(--primary-color);
+    margin-bottom: 5px;
 } .hability_course > p:not(:first-of-type) {
     padding-left: 10px;
 } .hability_subtitle {
@@ -103,8 +106,15 @@ main > section:not(:first-of-type) {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
 } .hability_btn_btn.active {
-    color: var(--fondo);
+    color: var(--blanco);
     background-color: var(--primary-color-halfOpacity);
+}
+
+.workExpierence-tasks {
+    text-align: left;
+    margin-top: 10px;
+} .workExpierence-tasks > p:not(:first-of-type) {
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 580px) {
@@ -175,5 +185,7 @@ main > section:not(:first-of-type) {
         width: 90%;
         max-width: 900px;
         padding: 40px;
-    }
+    } .expLaboral {
+        width: 50%;
+    } 
 }

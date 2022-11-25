@@ -22,7 +22,7 @@
                         $mensajeMail = $_POST['mensaje'];
                         $mensajeMail = wordwrap( $mensajeMail, 70, "\r\n" );
                         $asunto = $_POST['nombreAsunto'] . " - Contacta desde mi página";
-                        mail('martina.fernandez.sa@gmail.com', $asunto, $mensajeMail, "From: " . $emisor); //destinatario, asunto, mensaje, quien lo envía
+                        mail('martina.fernandez.sa@gmail.com', $asunto, $mensajeMail, "From: " . $emisor); //destinatario, asunto, mensaje, emisor
                         $mensaje = "Tu mensaje fue enviado con éxito!";
                     } else {
                         $mensaje = "Por favor, inserta una dirección de mail válida";
@@ -51,8 +51,8 @@
         <p>Gracias por visitar mi página!</p>
         <article class="socialLinks">
             <div><a href="https://github.com/MartinaFSA"><img src="img/social/gh.svg" alt="GitHub"></a></div>
-            <div><a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"><img src="img/social/ig.svg" alt="LinkedIn"></a></div>
-            <div><a href="https://www.instagram.com/mafesa._/"><img src="img/social/in.svg" alt="Instagram"></a></div>
+            <div><a href="https://www.linkedin.com/in/martina-fernandez-suarez-anzorena/"><img src="img/social/in.svg" alt="LinkedIn"></a></div>
+            <div><a href="https://www.instagram.com/mafesa._/"><img src="img/social/ig.svg" alt="Instagram"></a></div>
         </article>
         <button><a href="img/docs/CV_MartinaFernandezSuarezAnzorena.pdf" download="CV_MartinaFernandezSuarezAnzorena">Descargá mi CV</a></button>
     </section>
